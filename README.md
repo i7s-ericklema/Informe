@@ -1,4 +1,1 @@
-# Informe
-Arquitectura de Computadores - 8592
-
-EMU 8086
+# EMU8086 
