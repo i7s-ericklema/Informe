@@ -62,7 +62,7 @@ Registros de uso general del 8086/8088:
 
 ### 6. LISTA DE COMPONENTES
 | **COMPONENTE** | **DESCRIPCIÓN** |
-| --- | --- |
+| :---: | :---: |
 | Computadora | Sistema Operativo *Windows 10* |
 | Internet | Descarga de ***EMU8086*** |
 
