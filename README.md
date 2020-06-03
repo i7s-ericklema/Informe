@@ -51,6 +51,11 @@ Registros de uso general del 8086/8088:
 
 - **DI=** Puntero destino (no se puede subdividir). Sirve como puntero destino para las operaciones con cadenas. También sirve para realizar direccionamiento indirecto.
 
+#### Características
+
+#### Instrucciones
+
+
 
 ### 5. DIAGRAMAS
 - **Diagrama Esquemático**
@@ -70,7 +75,8 @@ Registros de uso general del 8086/8088:
 
 
 ### 8.EXPLICACIÓN DEL CODIGO FUENTE
-
+Para proceder con el codigo feunte lo primero que se realiza es la intalación del EMU8086, para lo cual se explica acontinuacion.
+* Se busca en el navegador ***EMU8086***
 
 ### 9. DESCRIPCIÓN DE PREREQUISITOS Y CONFIGURACIÓN
 Para la simulación del microprocesador 8086, se utilizó el **EMU808** el cual es scompatible para los sistemas operativos de *Windows XP/Vista/7/8/10* y tener un programa que descomprima archivos .rar para poder realizar la instalación del software.
