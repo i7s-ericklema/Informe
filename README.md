@@ -75,11 +75,34 @@ Registros de uso general del 8086/8088:
 
 
 ### 8.EXPLICACIÓN DEL CODIGO FUENTE
-Para proceder con el codigo feunte lo primero que se realiza es la intalación del EMU8086, para lo cual se explica acontinuacion.
-* Se busca en el navegador ***EMU8086***
+
 
 ### 9. DESCRIPCIÓN DE PREREQUISITOS Y CONFIGURACIÓN
-Para la simulación del microprocesador 8086, se utilizó el **EMU808** el cual es scompatible para los sistemas operativos de *Windows XP/Vista/7/8/10* y tener un programa que descomprima archivos .rar para poder realizar la instalación del software.
+Para la simulación del microprocesador 8086, se utilizó el **EMU808** el cual es scompatible para los sistemas operativos de *Windows XP/Vista/7/8/10* y tener un programa que descomprima archivos .rar para poder realizar la instalación del software, para lo cual se siguen los siguientes pasos.
+
+##### 1. Se busca en el navegador ***EMU8086***
+![](https://github.com/Rafa1104/Informe/blob/master/img/instalacion%201.png)
+
+#####  2. Ingresamos [EMU8086 Microprocessor Emulator ](https://download.cnet.com/Emu8086-Microprocessor-Emulator/3000-2069_4-10392690.html)
+![](https://github.com/Rafa1104/Informe/blob/master/img/instalacion%202.png)
+
+#### 3. Hacemos click en la Opcion de *Download now* para realizar la descarga del archivo .rar
+![](https://github.com/Rafa1104/Informe/blob/master/img/instalacion%203.png)
+
+#### 4. Una vez descragado el archivo descomprimimos la carpeta
+![](https://github.com/Rafa1104/Informe/blob/master/img/instalacion%204.png)
+
+#### 5. Ejecutamos el archivo *setup.exe*
+![](https://github.com/Rafa1104/Informe/blob/master/img/instalacion%205.png)
+
+#### 6. Al ejecutar el instalador debemos de poner *next* para siguiente y asi completar la instalación
+![](https://github.com/Rafa1104/Informe/blob/master/img/instalacion%206.png)
+
+#### 7. Para finalizar la instalación hacemos click en el boton de ***Install***
+![](https://github.com/Rafa1104/Informe/blob/master/img/instalacion%207.png)
+
+#### 8. Cuando se termina la instalación podemos interactuar con el emulador 
+![](https://github.com/Rafa1104/Informe/blob/master/img/instalacion%208.png)
 
 
 ### 10. APORTACIONES
