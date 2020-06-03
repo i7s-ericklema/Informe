@@ -1,9 +1,13 @@
 # EMU8086
+
+
 ## 1. PLANTEAMIENTO
 Con el fin de emular el funcionamiento del microprocesador del 8086 e implementar un codigo sencillo en lenguaje ensamblador para lo cual se plantea el procediento acontinuación:
 - Se busca un emulador del 8086 compatible con el Sistema Operativo que tengamos a disposición.
 - Para la simulación se utiliza un programa en lenguaje esamblador (asm).
 - Se verifica en el correcto funcionamiento del emulador.
+
+
 ## 2. OBJETIVOS
 ### **Objetivo General**
 - Emular el compartamiento del microprocesador 8086.
@@ -12,7 +16,11 @@ Con el fin de emular el funcionamiento del microprocesador del 8086 e implementa
 - Adquirir nociones básicas del lenguaje esamblador (asm).
 - Implementar un programa sencillo en lenguaje esamblador.
 - Analizar el comportamiento del software ****
+
+
 ## 3. ESTADO DEL ARTE
+
+
 
 ## 4. MARCO TEORIÓCO 
 El Intel 8086 y el Intel 8088 son los primeros microprocesadores de 16 bits diseñados por Intel. Son los primeros miembros de la arquitectura x86. Fue lanzado al mercado en 1978 y el 8088 en 1979.
@@ -42,5 +50,43 @@ Registros de uso general del 8086/8088:
 - **SI=** Puntero índice (no se puede subdividir). Sirve como puntero fuente para las operaciones con cadenas. También sirve para realizar direccionamiento indirecto.
 
 - **DI=** Puntero destino (no se puede subdividir). Sirve como puntero destino para las operaciones con cadenas. También sirve para realizar direccionamiento indirecto.
-### DIAGRAMAS
+
+
+### 5. DIAGRAMAS
 - **Diagrama Esquemático**
+
+**Arquitectura 8086**
+
+![](https://github.com/Rafa1104/Informe/blob/master/img/Arquitectura%208086.png)
+![](https://github.com/Rafa1104/Informe/blob/master/img/8086.PNG)
+
+### 6. LISTA DE COMPONENTES
+| **COMPONENTE** | **DESCRIPCIÓN** |
+| --- | --- |
+| Computadora | Sistema Operativo *Windows 10* |
+| Internet | Descarga de ***EMU8086*** |
+
+### 7. MAPA DE VARIABLES
+
+
+### 8.EXPLICACIÓN DEL CODIGO FUENTE
+
+
+### 9. DESCRIPCIÓN DE PREREQUISITOS Y CONFIGURACIÓN
+Para la simulación del microprocesador 8086, se utilizó el **EMU808** el cual es scompatible para los sistemas operativos de *Windows XP/Vista/7/8/10* y tener un programa que descomprima archivos .rar para poder realizar la instalación del software.
+
+
+### 10. APORTACIONES
+
+
+### 11. CONCLUSIONES
+El EMU8086 permite la oportunidad de simular programas capaces de ser ejecutados por el microprocesador 8086 diseñado por Intel. El software posee una interfaz gráfica que permite observar los registros, la pila de memoria, entre otros. Esto es una ayuda en el caso de tener errores en la ejecución del programa, ya que se puede observar el comportamiento interno y permite encontrar los errores de código.
+
+
+### 12. RECOMENDACIONES
+
+
+### 13. CRONOGRAMA
+
+
+### 14. BIBLIOGRAFIA
