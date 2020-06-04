@@ -66,8 +66,82 @@ Registros de uso general del 8086/8088:
 - **DI=** Puntero destino (no se puede subdividir). Sirve como puntero destino para las operaciones con cadenas. También sirve para realizar direccionamiento indirecto.
 
 #### Instrucciones
+Las instrucciones del 8086/88 se pueden dividir en varios grupos:
+
+##### 1. Instrucciones de transferencia de datos
+Las instrucciones de transferencia de datos copian datos de un sitio a otro y son los siguientes: MOV, XCHG, XLAT, LEA, LDS, LES, LAHF, SAHF, PUSH, PUSHF, POP, POPF.
+
+- **MOV:** Realiza la transferencia de datos del operando de origen al destino. 
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%201%20MOV.png)
+
+- **XCHG:** Realiza el intercambio entre los valores de los operando. Puede tener operando en registros y en memoria.
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%202%20XCHG.png)
+
+- **XLAT:** Carga en AL el contenido de la dirección apuntada por [BX+AL].
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%203%20XLAT.png)
+
+- **LEA:** Carga en un registro especificado la dirección efectiva especificada como en el operando origen:
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%204%20LEA.png)
 
 
+- **LDS y LES:** Carga el contenido de una dirección de memoria de 32 bits de la siguiente manera: la parte baja en el registro especificado y la parte alta en el registro DS y ES respectivamente.
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%205%20LDS%20y%20LES.png)
+
+- **PUSH y POP:** Realizan las operaciones de apilado y desapilado en la pila del procesador respectivamente, admiten todos los tipos de direccionamiento (excepto inmediato). Los operandos deben ser siempre de 16 bits.
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%206%20PUSH%20y%20POP.png)
+
+- **PUSHF y POPF:** Apila y desapila el registro de estado, respectivamente. 
+- **LAHF:** Carga la parte baja del registro de estado en AH. 
+- **SAHF:** Carga AH en el la parte baja del registro de estado.
+
+
+##### 2. Instrucciones aritméticas
+Este tipo de instrucciones realizan operaciones aritméticas con los operandos. Y son: ADD, ADC, DAA, AAA, SUB, SBB, DAS, AAS, NEG, MUL, IMUL, AAM, DIV, IDIV, AAD, CBW, CWB, INC, DEC.
+
+- **ADD y ADC:** Realizan la suma y la suma con acarreo (bit CF del registro de estado) de dos operandos, respectivamente, y guardan el resultado en el primero de ellos. Admiten todos los tipos de direccionamiento (excepto que ambos operando estén en memoria).
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%207%20ADD%20y%20ADC.png)
+
+- **DAA:** Realizan la corrección BCD empaquetado del resultado de una suma en AL.
+El 8086/88 realiza las sumas asumiendo que los operados son ambos valores binarios, de manera que se suman dos valores codificados en BCD empaquetado el resultado puede no ser un valor válido en este formato:
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%208%20DAA.png)
+
+- **SUB y SBB:** Realizan la resta y la resta con acarreo, respectivamente, de dos operandos y guardan el resultado en el primero de ellos. Admiten todos los modos de direccionamiento, excepto dos operando en memoria.
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%209%20SUB%20y%20BBS.png)
+
+- **DAS:** Realizan la corrección BCD empaquetado del resultado de una resta en AL. Actúan de manera similar a la instrucción de ajuste de la suma 
+
+- **NEG:** Realiza la operación aritmética de negado de un operando y guarda el resultado en el mismo operando. Admite todos los tipos de direccionamiento, excepto inmediato.
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%2010%20NEG.png)
+
+- **MUL e IMUL:** Realizan la multiplicación y multiplicación con signo, respectivamente, de contenido de AX y del operando indicado, guardando el resultado en AX, para operaciones de 8 bits y en DX:AX para operaciones de 16 bits. Los formatos son:
+
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%2011%20MUL%20e%20IMUL.png)
+
+- **DIV e IDIV:** Realizan la división y la división con signo, respectivamente. De AX entre el operando para operaciones de 8 bits, guardando el cociente en AL y el resto en AH; y DX:AX entre el operando para operaciones de 16 bits guardando el cociente en AX y el resto en DX.
+
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%2012%20DIV%20e%20IDIV.png)
+
+- **CBW y CWD:** Realizan la extensión del bit de signo de byte a WORD y de WORD a DWORD, actuando sobre AX y DX:AX, respectivamente. Tal y como se muestra en el figura. Tras esta operación el contenido de AH es FFh.
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%2013%20CBW%20y%20CWD.png)
+
+- **INC y DEC:** Realizan las operaciones de incremento y decremento, respectivamente, de un operando, guardando el resultado en el mismo operando. Admiten todos los modos de direccionamiento excepto el inmediato.
+![](https://github.com/Rafa1104/Informe/blob/master/img/o%2014%20INC%20y%20DEC.png)
+
+
+##### 3. Instrucciones lógicas
+Realizan las operaciones lógicas y son: OR, XOR, AND, NOT, TEST, CMP.
+- ****
+![]()
+- ***
+![]()
+
+##### 4. Instrucciones de desplazamiento y rotaciones
+
+##### 5. Instrucciones de E/S
+
+##### 6. Instrucciones de control del flujo del programa
+
+##### 7. Instrucciones de cadena de caracteres
 
 ### 5. DIAGRAMAS
 - **Diagrama Esquemático**
